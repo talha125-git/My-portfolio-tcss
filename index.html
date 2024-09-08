@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- icon link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Talha protfolio</title>
+</head>
+
+<script>
+    function Menu(e) {
+        let list = document.querySelector('ul');
+        e.name === 'menu' ? (e.name = "close", list.classList.add('top-[55px]'), list.classList.add('opacity-100'))
+            : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+
+</script>
+
+<body>
+    <!-- npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch -->
+    <!-- Nav Section -->
+
+    <nav class="w-full h-14 fixed bg-indigo-100 flex justify-between px-4 items-center md:px-4">
+        <div class="text-2xl text-indigo-700 font-bold">Malik Abutalha Raheem</div>
+        <ul class="bg-white md:bg-transparent md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 
+        md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 flex 
+        md:flex-row flex-col md:gap-4 justify-center items-center">
+
+            <li
+                class="mt-8 md:mt-0 mx-[10px] cursor-pointer hover:text-red-500 hover:border-b-2 hover:border-black transition-all duration-100">
+                <a href="#home"> Home</a>
+            </li>
+            <li
+                class="mt-8 md:mt-0 mx-[10px] cursor-pointer hover:text-red-500 hover:border-b-2 hover:border-black transition-all duration-100">
+                <a href="#project"> Projects</a>
+            </li>
+            <li
+                class="mt-8 md:mt-0 mx-[10px] cursor-pointer hover:text-red-500 hover:border-b-2 hover:border-black transition-all duration-100">
+                <a href="#education"> Education</a>
+            </li>
+            <li
+                class="mt-8 md:mt-0 mx-[10px] cursor-pointer hover:text-red-500 hover:border-b-2 hover:border-black transition-all duration-100">
+                <a href="#contact"> Contact Us</a>
+            </li>
+
+        </ul>
+
+        <div class="md:hidden">
+            <a href="#" name="menu" onclick="Menu(this)" class="text-4xl">&#8801;</a>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Home section -->
+    <section class="w-full h-auto" id="home">
+        <div class="left   flex flex-col-reverse md:flex-row justify-between flex-wrap">
+            <div class="md:mt-10">
+                <h1 class="text-[50px] ml-12 mt-14 text-red-500 font-medium font-serif">Hi It's Talha</h1>
+                <h2 class="text-[20px] ml-24 ">A Web <span class="text-red-500 font-medium font-serif">Developer</span>
+                </h2>
+                <p class="ml-20">Malik AbuTalha Raheem is a skilled professional in the field of web development. <br>
+                    With a keen eye for aesthetics and a solid understanding of user experience, <br>
+                    Talha brings creativity and functionality together to create visually appealing <br> and
+                    user-friendly digital interfaces. As a web developer,
+                    Talha is proficient in <br> translating design concepts into functional websites, ensuring a
+                    seamless and <br> engaging online experience.</p>
+            </div>
+            <div class="talha-img w-[200px] h-auto ml-24 mb-[60px] md:mr-44 mt-[90px] 
+                rounded-3xl border-2 border-red-300 hover:shadow-[0_0_10px_rgba(255,0,0,0.7)]">
+                <img src="talha_green-removebg-preview.png" alt="">
+            </div>
+        </div>
+
+        <div class="btn ml-[110px] mt-[35px] md:-mt-[55px] flex flex-wrap gap-8">
+            <button
+                class="w-20 rounded-lg border border-black px-[15px] bg-red-500 text-white transition-all duration-300  hover:bg-transparent hover:text-black transform hover:scale-90">
+                CV
+            </button>
+            <button
+                class="w-20 rounded-lg border border-black p-[5px] bg-transparent text-black transition-all duration-300  hover:bg-red-500 hover:text-white transform hover:scale-90">
+                Projects
+            </button>
+        </div>
+
+        <div id="social-icons" class="icons flex flex-wrap gap-5 ml-[100px] mt-[20px]">
+            <a href="#"
+                class="flex items-center justify-center w-10 h-10 rounded-full border border-red-500 text-red-500 bg-transparent hover:bg-red-500 hover:text-white transition-colors duration-300 ease-in-out">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100023337737054&mibextid=ZbWKwL"
+                class="flex items-center justify-center w-10 h-10 rounded-full border border-red-500 text-red-500 bg-transparent hover:bg-red-500 hover:text-white transition-colors duration-300 ease-in-out">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="https://www.instagram.com/invites/contact/?igsh=1cn59hug77isg&utm_content=66xrreo"
+                class="flex items-center justify-center w-10 h-10 rounded-full border border-red-500 text-red-500 bg-transparent hover:bg-red-500 hover:text-white transition-colors duration-300 ease-in-out">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://x.com/abutalha125?t=1nA9JVpRLwGuY31yV1AaQw&s=09"
+                class="flex items-center justify-center w-10 h-10 rounded-full border border-red-500 text-red-500 bg-transparent hover:bg-red-500 hover:text-white transition-colors duration-300 ease-in-out">
+                <i class='bx bxl-twitter'></i>
+            </a>
+        </div>
+
+    </section>
+    <hr class="mt-16">
+
+
+    <!-- project section -->
+
+    <section class="w-full h-auto mt-10" id="project">
+
+        <div class="flex justify-center items-center mt-12">
+            <h1 class="text-4xl font-bold font-serif">PROJECTS</h1>
+        </div>
+        <div class="w-[200px] h-1 border-b-2 border-red-400 -mt-[4px] rounded-2xl my-2 mx-auto"></div>
+
+
+        <div class="flex flex-wrap justify-center mt-12 gap-8">
+
+            <div
+                class="h-full border border-red-500 p-8 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">Project 1</h1>
+                <p class="text-lg mb-4"><span class="text-red-500">Background Color</span><br>changer</p>
+                <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-md border transition-all duration-300 hover:bg-transparent hover:text-black hover:border-black">Visit</button>
+            </div>
+
+
+
+            <div
+                class="h-full border border-red-500 p-8 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">Project 2</h1>
+                <p class="text-lg mb-4"><span class="text-red-500">Weight Calculator</span><br>bmi</p>
+                <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-md border transition-all duration-300 hover:bg-transparent hover:text-black hover:border-black">Visit</button>
+            </div>
+
+            <div
+                class="h-full border border-red-500 p-8 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">Project 3</h1>
+                <p class="text-lg mb-4"><span class="text-red-500">Digital Clock</span><br>Watch</p>
+                <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-md border transition-all duration-300 hover:bg-transparent hover:text-black hover:border-black">Visit</button>
+            </div>
+
+            <div
+                class="h-full border border-red-500 p-8 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">Project 4</h1>
+                <p class="text-lg mb-4"><span class="text-red-500">Guess Number</span><br>Game</p>
+                <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-md border transition-all duration-300 hover:bg-transparent hover:text-black hover:border-black">Visit</button>
+            </div>
+
+            <div
+                class="h-full border border-red-500 p-8 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">Project 5</h1>
+                <p class="text-lg mb-4"><span class="text-red-500">Auto Background</span><br>changing</p>
+                <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-md border transition-all duration-300 hover:bg-transparent hover:text-black hover:border-black">Visit</button>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center mt-12 gap-8">
+            <div
+                class="h-full border border-red-500 p-8 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">Project 6</h1>
+                <p class="text-lg mb-4"><span class="text-red-500">Keyboard Keys</span><br>Key button</p>
+                <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-md border transition-all duration-300 hover:bg-transparent hover:text-black hover:border-black">Visit</button>
+            </div>
+
+            <div
+                class="h-full border border-red-500 p-8 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">Project 7</h1>
+                <p class="text-lg mb-4"><span class="text-red-500">Analougue Clock</span><br>Time</p>
+                <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-md border transition-all duration-300 hover:bg-transparent hover:text-black hover:border-black">Visit</button>
+            </div>
+
+            <div
+                class="h-full border border-red-500 p-8 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">Project 8</h1>
+                <p class="text-lg mb-4"><span class="text-red-500">Math Calculator</span><br>Math 123</p>
+                <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-md border transition-all duration-300 hover:bg-transparent hover:text-black hover:border-black">Visit</button>
+            </div>
+
+            <div
+                class="h-full border border-red-500 p-8 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">Project 9</h1>
+                <p class="text-lg mb-4"><span class="text-red-500">Tic take toe</span><br>Game</p>
+                <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-md border transition-all duration-300 hover:bg-transparent hover:text-black hover:border-black">Visit</button>
+            </div>
+
+
+            <div
+                class="h-full border border-red-500 p-8 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">Project 10</h1>
+                <p class="text-lg mb-4"><span class="text-red-500">Rock Paper Scissors</span><br>Game</p>
+                <button
+                    class="px-4 py-2 bg-red-500 text-white rounded-md border transition-all duration-300 hover:bg-transparent hover:text-black hover:border-black">Visit</button>
+            </div>
+        </div>
+    </section>
+
+    <hr class="mt-7">
+
+    <!-- Education Sec-->
+
+    <section class="w-full h-auto mt-10" id="education">
+        <div class="flex justify-center items-center mt-12">
+            <h1 class="text-4xl font-bold font-serif">EDUCATION</h1>
+        </div>
+        <div class="w-[230px] h-1 border-b-2 border-red-400 -mt-[4px] rounded-2xl my-2 mx-auto"></div>
+
+        <div class="flex flex-wrap justify-center mt-12 gap-4">
+
+            <div
+                class="h-[250px] w-[300px] border border-red-500 p-12 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">School</h1>
+                <p class="text-lg mb-4">I completed my school from <a href="#" class="text-red-500">Peshawar Model
+                        School Boys 3 </a></p>
+            </div>
+
+
+
+            <div
+                class="h-[250px] w-[300px] border border-red-500 p-12 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">COLLAGE</h1>
+                <p class="text-lg mb-4">I completed my Collage from <a href="#" class="text-red-500">Goernmenet Collage
+                        Peshawar</a></p>
+            </div>
+
+            <div
+                class="h-[250px] w-[300px] border border-red-500 p-12 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">UNIVERSITY</h1>
+                <p class="text-lg mb-4">NOW studying BS Software Engineering <br> from <a href="#"
+                        class="text-red-500">CECOS University Peshawar</a></p>
+            </div>
+
+            <div
+                class="h-[250px] w-[300px] border border-red-500 p-12 text-center rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-red-500">
+                <h1 class="uppercase text-2xl font-bold mb-4">INTERNSHIP</h1>
+                <p class="text-lg mb-4">Talha is a skilled professional in the field of visual UX/UI design and <span
+                        class="text-red-500 cursor-pointer">web development</span>.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <hr class="mt-7">
+
+    <!-- contact section -->
+
+    <section id="contact" class="py-16">
+
+        <div class="flex justify-center items-center mt-12">
+            <h1 class="text-4xl font-bold font-serif">CONTACT</h1>
+        </div>
+        <div class="w-[180px] h-1 border-b-2 border-red-400 -mt-[4px] rounded-2xl my-2 mx-auto"></div>
+
+        <form action="" class="flex flex-col w-full mt-8 items-center justify-center gap-12 text-center mx-auto">
+
+            <div id="input-group" class="flex flex-wrap gap-8 justify-center">
+                <div id="input-box" class="flex flex-wrap md:flex-col gap-6 w-full md:w-auto">
+                    <input type="text" placeholder="Full Name"
+                        class="w-full p-6 md:w-[450px]   text-lg bg-transparent rounded-2xl border border-red-500">
+                    <input type="email" placeholder="Email"
+                        class="w-full p-6 md:w-[450px]  text-lg bg-transparent rounded-2xl border border-red-500">
+                </div>
+
+                <div id="input-box" class="flex flex-wrap md:flex-col gap-6 w-full md:w-auto">
+                    <input type="number" placeholder="Phone Number"
+                        class="w-full p-6 md:w-[450px] text-lg bg-transparent rounded-2xl border border-red-500">
+                    <input type="text" placeholder="Subject"
+                        class="w-full p-6 md:w-[450px] text-lg bg-transparent rounded-2xl border border-red-500">
+                </div>
+            </div>
+            <div id="input-group2" class="w-full md:w-auto flex flex-col items-center">
+                <textarea placeholder="Your Message"
+                    class="w-full h-48 px-8 py-4 md:h-[200px] md:mt-[5px] md:w-[750px] text-lg bg-transparent rounded-2xl border border-red-500 resize-none mb-6"></textarea>
+
+                <input type="submit" value="Send Message" id="btn"
+                    class=" md:w-auto px-6 py-3 mt-4 border border-black text-lg bg-transparent text-black rounded-xl cursor-pointer hover:bg-red-500 hover:text-white transition-all">
+            </div>
+        </form>
+    </section>
+
+    <footer class="w-full h-full bg-indigo-950 mt-7 ">
+        <div class="flex justify-center">
+            <div class="text-4xl px-3 text-blue-400 font-serif mb-3">
+                MALIK <span class="text-red-400"> ABUTALHA </span> RAHEEM
+            </div>
+        </div>
+
+        <div class="flex flex-wrap flex-col md:flex-row justify-center -mt-5 md:gap-24">
+            <div class="flex flex-wrap justify-center items-center mt-7">
+
+                <ul class="flex flex-col gap-3 items-center">
+                    <li class="gap-6 cursor-pointer text-white hover:underline"><a href="#home">home</a></li>
+                    <li class="gap-6 cursor-pointer text-white hover:underline"><a href="#education">Education</a></li>
+                    <li class="gap-6 cursor-pointer text-white hover:underline"><a href="#contact">Contact</a></li>
+                    <li class="gap-6 cursor-pointer text-white hover:underline"><a href="#project">Projects</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class=" mt-8 md:ml-12 border-r-0 md:border-r-2 md:border-b-0 border-b-2"></div>
+
+            <div class="flex flex-wrap justify-center items-center  mt-7 md:ml-16">
+                <ul class="flex flex-col gap-3 items-center">
+                    <li class="gap-6 cursor-pointer text-white hover:underline">Facebook</li>
+                    <li class="gap-6 cursor-pointer text-white hover:underline">Instagram</li>
+                    <li class="gap-6 cursor-pointer text-white hover:underline">Twitter</li>
+                    <li class="gap-6 cursor-pointer text-white hover:underline">Youtube</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="flex justify-center mt-9">
+            <p class=" text-white">ABC Company alright: 2024 talha</p>
+        </div>
+        <div class="border-b-2 border-transparent mt-[4px] "></div>
+    </footer>
+
+
+</body>
+
+</html>
